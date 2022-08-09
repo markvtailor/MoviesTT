@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MoviesTT</string>
+    <string name="movie_header">%s (%s)</string>
+    <string name="dialog">"Фильм %s был нажат!"</string>
+</resources>

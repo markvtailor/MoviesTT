@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/grey"
+        android:id="@+id/card"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="false"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/grey">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/movieHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/directorName"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/text_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/movieHeader" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/actors"
+                android:textColor="@color/text_grey"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/directorName" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
